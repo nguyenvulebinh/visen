@@ -1,4 +1,3 @@
-import ftfy
 import bogo
 import re
 
@@ -69,7 +68,6 @@ def get_enter_code(word):
 
 
 def clean_tone(str_in):
-    str_in = ftfy.fix_text(str_in)
     typing_out = []
     for word in str_in.split():
         if len(set_map_char & set(list(word))) == 0:
